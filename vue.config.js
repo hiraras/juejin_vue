@@ -7,6 +7,9 @@ const merge = require('webpack-merge');
 const cfg = process.env.NODE_ENV === 'production' ? configs.build.env : configs.dev.env;
 
 module.exports = {
+  devServer: {
+    open: true
+  },
   chainWebpack: config => {
     config.plugin('define')
       .tap(args => {

@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service --mode develop",
-    "prod": "vue-cli-service --mode production"
+    "dev": "vue-cli-service serve --mode develop",
+    "prod": "vue-cli-service serve --mode production"
   },
   "dependencies": {
     "core-js": "^3.6.4",
