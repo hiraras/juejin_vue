@@ -3,10 +3,21 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <div>{{ JSON.stringify(env) }}</div>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script type="text/babel">
+export default {
+  data: function() {
+    return {
+      env: process.env
+    }
+  }
+}
+</script>
 
 <style lang="less">
 #app {
